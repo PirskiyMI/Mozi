@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Career</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<svg display="none">
+
+		<symbol viewBox="0 0 512 512" id="arrow">
+			<g clip-path="url(#clip0_473_386)">
+				<path
+					d="M322.7,128.4L423,233.4c6,5.8,9,13.7,9,22.4c0,8.7-3,16.5-9,22.4L322.7,383.6c-11.9,12.5-31.3,12.5-43.2,0  c-11.9-12.5-11.9-32.7,0-45.2l48.2-50.4h-217C93.7,288,80,273.7,80,256c0-17.7,13.7-32,30.6-32h217l-48.2-50.4  c-11.9-12.5-11.9-32.7,0-45.2C291.4,115.9,310.7,115.9,322.7,128.4z" />
+			</g>
+		</symbol>
+
+		<symbol viewBox="0 0 56.693 56.693" id="facebook">
+			<path
+				d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+		</symbol>
+
+		<symbol viewBox="0 0 56.693 56.693" id="twitter">
+			<path
+				d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z" />
+		</symbol>
+
+		<symbol viewBox="0 0 56.7 56.7" id="instagram">
+			<g>
+				<path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+					c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
+				<circle cx="41.5" cy="16.4" r="2.9" />
+				<path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+					h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+					s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+					c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
+			</g>
+		</symbol>
+
+		<symbol viewBox="0 0 17 17" id="linked">
+			<path d="M4.01709 16.5715H0.780099V5.93569H4.10958V16.5715H4.01709ZM2.35236 4.45592C1.33501 4.45592 0.410156 3.62356 0.410156 2.51373C0.410156 1.49639 1.24253 0.571533 2.35236 0.571533C3.36969 0.571533 4.29454 1.4039 4.29454 2.51373C4.29454 3.62356 3.46218 4.45592 2.35236 4.45592ZM16.4102 16.5715H13.0807V11.3923C13.0807 10.19 13.0807 8.61777 11.4159 8.61777C9.65872 8.61777 9.47374 9.91257 9.47374 11.2999V16.5715H6.14426V5.93569H9.28877V7.41547C9.7512 6.58309 10.7685 5.75072 12.4333 5.75072C15.7628 5.75072 16.4102 7.97037 16.4102 10.8374V16.5715Z"/>
+		</symbol>
+	</svg>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__logo">
+					<img src="img/header/header-logo__icon.svg" alt="Логотип">
+				</div>
+				<div class="header__menu menu">
+					<input type="checkbox" id="menu__toggle">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							<li class="menu__item"><a href="#" class="menu__link menu__link_button button">We're hiring</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<label for="menu__toggle" class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="career">
+				<div class="career__container _container">
+					<div class="career__content content">
+						<h1 class="content__title">
+							Hey, we're looking for <span>Dreamers</span>
+						</h1>
+						<div class="content__text">
+							<a class="content__button button button_br" href="#">View open roles</a>
+						</div>
+					</div>
+					<div class="career__img">
+						<img src="img/career/Group 2847.svg" alt="Career">
+					</div>
+				</div>
+			</section>
+			<section class="offer">
+				<div class="offer__container _container">
+					<div class="offer__header block-header">
+						<h2 class="block-header__title">
+							We offer nothing but the best
+						</h2>
+						<div class="block-header__text">
+							We put our people first and have built a culture that brings the best out of everyone.
+						</div>
+					</div>
+					<div class="offer__wraapper">
+						<div class="offer__item">
+							<div class="offer__body">
+								<h3 class="offer__lable">
+									<span><img src="img/offer/offer-icon-1.png" alt="Иконка 1"></span> Flexiblility
+								</h3>
+								<div class="offer__text">
+									Be it in-office, WFH or a mix of both, do your best work from wherever you want, because we
+									have a hybrid and flexible work culture.
+								</div>
+							</div>
+						</div>
+						<div class="offer__item">
+							<div class="offer__body">
+								<h3 class="offer__lable">
+									<span><img src="img/offer/offer-icon-2.png" alt="Иконка 2"></span> Learning
+								</h3>
+								<div class="offer__text">
+									We offer plenty of learning opportunities such as professional courses, guided learning and
+									workshops to pick up new skills.
+								</div>
+							</div>
+						</div>
+						<div class="offer__item">
+							<div class="offer__body">
+								<h3 class="offer__lable">
+									<span><img src="img/offer/offer-icon-3.png" alt="Иконка 3"></span> Wellbeing
+								</h3>
+								<div class="offer__text">
+									We’ve got your wellbeing covered with medical insurance for employees and dependents,
+									employee loans and paid parental leaves.
+								</div>
+							</div>
+						</div>
+						<div class="offer__item">
+							<div class="offer__body">
+								<h3 class="offer__lable">
+									<span><img src="img/offer/offer-icon-4.png" alt="Иконка 4"></span> Perks
+								</h3>
+								<div class="offer__text">
+									We provide great tech like Macbooks and work essentials. To top it, we have yearly
+									company-wide retreats at the best locations!
+								</div>
+							</div>
+						</div>
+						<div class="offer__item">
+							<div class="offer__body">
+								<h3 class="offer__lable">
+									<span><img src="img/offer/offer-icon-5.png" alt="Иконка 5"></span> Growth
+								</h3>
+								<div class="offer__text">
+									We provide great tech like Macbooks and work essentials. To top it, we have yearly
+									company-wide retreats at the best locations!
+								</div>
+							</div>
+						</div>
+						<div class="offer__item">
+							<div class="offer__body">
+								<h3 class="offer__lable">
+									<span><img src="img/offer/offer-icon-6.png" alt="Иконка 6"></span> Network
+								</h3>
+								<div class="offer__text">
+									Build your network and rub shoulders with top teams from the biggest brands and startups in
+									the world.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="life-mozi">
+				<div class="life-mozi__container _container">
+					<div class="life-mozi__wrapper">
+						<div class="life-mozi__header block-header">
+							<h2 class="block-header__title">
+								Life@ <br> Mozi
+							</h2>
+							<div class="block-header__text">
+								The problems we solve every day could be serious, but we’re not! We have a lot of fun because we
+								love what we do and you’re welcome to be a part of it.
+							</div>
+						</div>
+					</div>
+					<div class="life-mozi__img">
+						<img src="img/life-mozi/life-mozi-1.jpg" alt="Фото 1">
+					</div>
+					<div class="life-mozi__img">
+						<img src="img/life-mozi/life-mozi-2.jpg" alt="Фото 2">
+					</div>
+					<div class="life-mozi__img">
+						<img src="img/life-mozi/life-mozi-3.jpg" alt="Фото 3">
+					</div>
+					<div class="life-mozi__img">
+						<img src="img/life-mozi/life-mozi-4.jpg" alt="Фото 4">
+					</div>
+					<div class="life-mozi__img">
+						<img src="img/life-mozi/life-mozi-5.jpg" alt="Фото 5">
+					</div>
+				</div>
+			</section>
+			<section class="join">
+				<div class="join__container _container">
+					<div class="join__header block-header">
+						<h2 class="block-header__title">
+							Join the pack
+						</h2>
+						<div class="block-header__text">
+							If you’re looking to do the best work of your career, learn and grow, then you’ll fit right in at
+							Mozi!
+						</div>
+					</div>
+					<div class="join__items">
+						<div class="join__item">
+							<div class="join__body">
+								<div class="join__position">Front-end Developer</div>
+								<div class="join__info">
+									<span class="join__work-time">Full time</span>
+									<span class="join__location">India</span>
+								</div>
+							</div>
+							<a class="join__button button button_br" href="#">View details</a>
+						</div>
+						<div class="join__item">
+							<div class="join__body">
+								<div class="join__position">PHP Developers (Laravel)</div>
+								<div class="join__info">
+									<span class="join__work-time">Full time</span>
+									<span class="join__location">India</span>
+								</div>
+							</div>
+							<a class="join__button button button_br" href="#">View details</a>
+						</div>
+						<div class="join__item">
+							<div class="join__body">
+								<div class="join__position">Junior Software Developer</div>
+								<div class="join__info">
+									<span class="join__work-time">Full time</span>
+									<span class="join__location">India</span>
+								</div>
+							</div>
+							<a class="join__button button button_br" href="#">View details</a>
+						</div>
+						<div class="join__item">
+							<div class="join__body">
+								<div class="join__position">WordPress Developer + Designer</div>
+								<div class="join__info">
+									<span class="join__work-time">Full time</span>
+									<span class="join__location">India</span>
+								</div>
+							</div>
+							<a class="join__button button button_br" href="#">View details</a>
+						</div>
+						<div class="join__item">
+							<div class="join__body">
+								<div class="join__position">Node.js Developer</div>
+								<div class="join__info">
+									<span class="join__work-time">Full time</span>
+									<span class="join__location">India</span>
+								</div>
+							</div>
+							<a class="join__button button button_br" href="#">View details</a>
+						</div>
+					</div>
+					<a class="join__button button" href="#">See more</a>
+				</div>
+			</section>
+			<section class="did-not-find">
+				<div class="did-not-find__header block-header">
+					<h2 class="block-header__title">
+						Didn’t find what you’re looking for?
+					</h2>
+					<div class="block-header__text">
+						We are always on the lookout for great people. Tell us why you want to join us.
+					</div>
+					<a class="did-not-find__button button" href="contact.html">Write to us</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container _container">
+					<div class="footer__disclaimer">
+						<div class="footer__logo"><img src="img/footer/footer-logo__icon.svg" alt="Логотип"></div>
+						<div class="footer__text">
+							Mozil builds extensions, plugins and apps to simplify work for businesses.
+						</div>
+					</div>
+					<div class="footer__lists">
+						<ul class="footer__list">
+							<div class="footer__lable">Products</div>
+							<li class="footer__item"><a class="footer__link" href="products.html">CookieYes</a></li>
+							<li class="footer__item"><a class="footer__link" href="products.html">Webtoffee</a></li>
+						</ul>
+						<ul class="footer__list">
+							<div class="footer__lable">About</div>
+							<li class="footer__item"><a class="footer__link" href="about.html">About us</a></li>
+							<li class="footer__item"><a class="footer__link" href="career.html">Career</a></li>
+							<li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+						</ul>
+						<div class="footer__media">
+							<div class="footer__lable">Follow us</div>
+							<ul class="footer__list footer__list_socials">
+								<li class="footer__item"><a class="footer__link" href="#"><svg>
+											<use xlink:href="#facebook"></use>
+										</svg></a></li>
+								<li class="footer__item"><a class="footer__link" href="#"><svg>
+											<use xlink:href="#twitter"></use>
+										</svg></a></li>
+								<li class="footer__item"><a class="footer__link" href="#"><svg>
+											<use xlink:href="#instagram"></use>
+										</svg></a></li>
+								<li class="footer__item"><a class="footer__link" href="#"><svg>
+											<use xlink:href="#linked"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container _container">
+					<div class="footer__reserved">© 2022 Mozi - All right reserved </div>
+					<div class="footer__last">Terms & Conditions</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
